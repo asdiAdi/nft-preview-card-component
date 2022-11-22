@@ -34,10 +34,10 @@ body {
   background-color: var(--very-dark-blue-main);
 }
 /* center the card */
-main {
+.card {
   width: 328px;
   height: 545px;
-  padding: 24px;
+  padding: 1.5rem;
   background-color: var(--very-dark-blue-card);
   border-radius: 16px;
   box-shadow: 0px 24px 2px 16px hsl(217, 55%, 10%),
@@ -46,7 +46,7 @@ main {
 
 .nft-img-container {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -78,21 +78,21 @@ main {
 }
 
 h1 {
-  margin-bottom: 14px;
-  font: 600 22px "Outfit", sans-serif;
+  margin-bottom: 0.75rem;
+  font: 600 1.4rem "Outfit", sans-serif;
 }
 .text {
-  font: 300 16px/1.6 "Outfit", sans-serif;
+  font: 300 1rem/1.6 "Outfit", sans-serif;
 }
 
 .info-container {
   justify-content: space-between;
-  margin: 16px auto;
+  margin: 1rem auto;
 }
 
 .info-container > p {
-  gap: 6px;
-  font-weight: 400 16px "Outfit", sans-serif;
+  gap: 0.5rem;
+  font-weight: 400 1rem "Outfit", sans-serif;
 }
 
 .line {
@@ -100,9 +100,9 @@ h1 {
 }
 
 .author {
-  gap: 16px;
+  gap: 1rem;
   justify-content: flex-start;
-  margin: 16px auto;
+  margin: 1rem auto;
 }
 
 .avatar {
@@ -118,4 +118,24 @@ h1 {
 .hoverable:hover {
   color: var(--cyan);
   opacity: 1;
+}
+@media only screen and (min-width: 90rem) {
+  .card {
+    width: 351px;
+    height: 596px;
+  }
+  h1 {
+    margin-bottom: 1rem;
+  }
+  .text {
+    font-size: 1.12rem;
+    line-height: 1.45;
+  }
+  .info-container {
+    margin: 1.5rem 0;
+  }
+
+  .author > span {
+    font-size: 1rem;
+  }
 }
